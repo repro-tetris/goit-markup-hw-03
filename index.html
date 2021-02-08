@@ -13,23 +13,27 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header container">
       <!-- Navigation -->
-      <nav>
+      <nav class="nav-main">
         <a href="./" class="logo"><span>Web</span>Studio</a>
         <ul class="nav">
-          <li><a href="#" class="nav-link active">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-          <li><a href="#" class="nav-link">Контакты</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Студия</a>
+          </li>
+          <li class="nav-item">
+            <a href="./portfolio.html" class="nav-link">Портфолио</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
       <ul class="contacts">
-        <li>
+        <li class="contacts-item">
           <a href="mailto:info@devstudio.com" class="contacts-link"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="contacts-item">
           <a href="tel:+380961111111" class="contacts-link"
             >+38 096 111 11 11</a
           >
@@ -47,31 +51,31 @@
         <button class="hero-button">Заказать услугу</button>
       </section>
       <!--Our advantages -->
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Our advantages</h2>
         <ul class="advantages-list">
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-title">Внимание к деталям</h3>
             <p class="advantages-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-title">Пунктуальность</h3>
             <p class="advantages-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-title">Планирование</h3>
             <p class="advantages-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-title">Современные технологии</h3>
             <p class="advantages-text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -81,27 +85,30 @@
         </ul>
       </section>
       <!-- What we do? -->
-      <section class="wedo">
+      <section class="wedo container">
         <h2 class="wedo-title">Чем мы занимаемся</h2>
         <ul class="wedo-list">
-          <li>
+          <li class="wedo-item">
             <img
+              class="wedo-img"
               src="./img/what-we-do/img1.jpg"
               alt="программист набирает код"
               width="370"
               height="294"
             />
           </li>
-          <li>
+          <li class="wedo-item">
             <img
+              class="wedo-img"
               src="./img/what-we-do/img2.jpg"
               alt="дизайн мобильных интерфейсов"
               width="370"
               height="294"
             />
           </li>
-          <li>
+          <li class="wedo-item">
             <img
+              class="wedo-img"
               src="./img/what-we-do/img3.jpg"
               alt="выбирает цвет"
               width="370"
@@ -113,73 +120,90 @@
 
       <!-- Our command -->
       <section class="command">
-        <h2 class="command-title">Наша команда</h2>
-        <ul class="command-list">
-          <li class="command-item">
-            <img
-              src="./img/our-command/ihor.jpg"
-              alt="Игорь Демьяненко"
-              width="270"
-              height="260"
-            />
-            <h3 class="command-subtitle">Игорь Демьяненко</h3>
-            <p class="command-text">Product Designer</p>
-          </li>
-          <li class="command-item">
-            <img
-              src="./img/our-command/olga.jpg"
-              alt="Ольга Репина"
-              width="270"
-              height="260"
-            />
-            <h3 class="command-subtitle">Ольга Репина</h3>
-            <p class="command-text">Frontend Developer</p>
-          </li>
-          <li class="command-item">
-            <img
-              src="./img/our-command/nicolay.jpg"
-              alt="Николай Тарасов"
-              width="270"
-              height="260"
-            />
-            <h3 class="command-subtitle">Николай Тарасов</h3>
-            <p class="command-text">Marketing</p>
-          </li>
-          <li class="command-item">
-            <img
-              src="./img/our-command/michail.jpg"
-              alt="Игорь Демьяненко"
-              width="270"
-              height="260"
-            />
-            <h3 class="command-subtitle">Михаил Ермаков</h3>
-            <p class="command-text">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="command-title">Наша команда</h2>
+          <ul class="command-list">
+            <li class="command-item">
+              <img
+                class="command-img"
+                src="./img/our-command/ihor.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <div class="command-container">
+                <h3 class="command-subtitle">Игорь Демьяненко</h3>
+                <p class="command-text">Product Designer</p>
+              </div>
+            </li>
+            <li class="command-item">
+              <img
+                class="command-img"
+                src="./img/our-command/olga.jpg"
+                alt="Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <div class="command-container">
+                <h3 class="command-subtitle">Ольга Репина</h3>
+                <p class="command-text">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="command-item">
+              <img
+                class="command-img"
+                src="./img/our-command/nicolay.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <div class="command-container">
+                <h3 class="command-subtitle">Николай Тарасов</h3>
+                <p class="command-text">Marketing</p>
+              </div>
+            </li>
+            <li class="command-item">
+              <img
+                class="command-img"
+                src="./img/our-command/michail.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <div class="command-container">
+                <h3 class="command-subtitle">Михаил Ермаков</h3>
+                <p class="command-text">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
       <!-- Logo -->
-      <a href="/" class="logo white"><span>Web</span>Studio</a>
-
-      <address class="address">
-        <ul class="address-list">
-          <li>
-            <a href="#" class="address-item">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <li>
-            <a href="mailto:info@example.com" class="address-item opacity06"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="address-item opacity06"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container footerflex">
+        <a href="/" class="logo white"><span>Web</span>Studio</a>
+        <address class="address">
+          <ul class="address-list">
+            <li class="address-item">
+              <a href="#" class="address-link"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="address-item">
+              <a href="mailto:info@example.com" class="address-link opacity06"
+                >info@example.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a href="tel:+380991111111" class="address-link opacity06"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
