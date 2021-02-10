@@ -9,36 +9,46 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="header container">
+    <header class="header">
       <!-- Navigation -->
-      <nav class="nav-main">
-        <a href="./" class="logo"><span>Web</span>Studio</a>
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Студия</a>
-          </li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="nav-link">Портфолио</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="contacts">
-        <li class="contacts-item">
-          <a href="mailto:info@devstudio.com" class="contacts-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts-item">
-          <a href="tel:+380961111111" class="contacts-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      <div class="container">
+        <div class="header-flex">
+          <nav class="nav-main">
+            <a href="./" class="logo"><span>Web</span>Studio</a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Студия</a>
+              </li>
+              <li class="nav-item">
+                <a href="./portfolio.html" class="nav-link">Портфолио</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts-item">
+              <a href="mailto:info@devstudio.com" class="contacts-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a href="tel:+380961111111" class="contacts-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- Main -->
     <main>
@@ -51,71 +61,75 @@
         <button class="hero-button">Заказать услугу</button>
       </section>
       <!--Our advantages -->
-      <section class="advantages container">
+      <section class="advantages">
         <h2 class="visually-hidden">Our advantages</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <h3 class="advantages-title">Внимание к деталям</h3>
-            <p class="advantages-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Пунктуальность</h3>
-            <p class="advantages-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Планирование</h3>
-            <p class="advantages-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Современные технологии</h3>
-            <p class="advantages-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <h3 class="advantages-title">Внимание к деталям</h3>
+              <p class="advantages-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">Пунктуальность</h3>
+              <p class="advantages-text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">Планирование</h3>
+              <p class="advantages-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">Современные технологии</h3>
+              <p class="advantages-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- What we do? -->
-      <section class="wedo container">
-        <h2 class="wedo-title">Чем мы занимаемся</h2>
-        <ul class="wedo-list">
-          <li class="wedo-item">
-            <img
-              class="wedo-img"
-              src="./img/what-we-do/img1.jpg"
-              alt="программист набирает код"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="wedo-item">
-            <img
-              class="wedo-img"
-              src="./img/what-we-do/img2.jpg"
-              alt="дизайн мобильных интерфейсов"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="wedo-item">
-            <img
-              class="wedo-img"
-              src="./img/what-we-do/img3.jpg"
-              alt="выбирает цвет"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+      <section class="wedo">
+        <div class="container">
+          <h2 class="wedo-title">Чем мы занимаемся</h2>
+          <ul class="wedo-list">
+            <li class="wedo-item">
+              <img
+                class="wedo-img"
+                src="./img/what-we-do/img1.jpg"
+                alt="программист набирает код"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="wedo-item">
+              <img
+                class="wedo-img"
+                src="./img/what-we-do/img2.jpg"
+                alt="дизайн мобильных интерфейсов"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="wedo-item">
+              <img
+                class="wedo-img"
+                src="./img/what-we-do/img3.jpg"
+                alt="выбирает цвет"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Our command -->
@@ -179,11 +193,13 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
     <footer class="footer">
       <!-- Logo -->
       <div class="container footerflex">
         <a href="/" class="logo white"><span>Web</span>Studio</a>
+
         <address class="address">
           <ul class="address-list">
             <li class="address-item">
@@ -191,11 +207,13 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
+
             <li class="address-item">
               <a href="mailto:info@example.com" class="address-link opacity06"
                 >info@example.com</a
               >
             </li>
+
             <li class="address-item">
               <a href="tel:+380991111111" class="address-link opacity06"
                 >+38 099 111 11 11</a
