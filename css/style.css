@@ -9,9 +9,6 @@
   --bg-dark: #2f303a;
   --bg-light: #f5f4fa;
   --border-color-light: #ececec;
-
-  --container-padding: 15px;
-  --container-width: 1170px;
 }
 /* #endregion */
 
@@ -36,28 +33,40 @@ body {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  width: calc(var(--container-width) + var(--container-padding) * 2);
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
-  margin-right: auto;
-  margin-left: auto;
+  --gaps: 15px;
+  width: calc(1170px + var(--gaps) * 2);
+  padding-left: var(--gaps);
+  padding-right: var(--gaps);
+  margin: 0 auto;
 }
 /* #endregion */
 
 /* #region HEADER */
 
 .header {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   background-color: var(--white-color);
   border-bottom: 1px solid var(--border-color-light);
   margin: 0 auto;
 }
 
-.header-flex {
+.header .container {
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 .nav-main {
@@ -84,17 +93,18 @@ body {
 .nav {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-item + .nav-item {
   margin-left: 50px;
 }
 .nav-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 1.13;
+  line-height: 1.15;
   color: var(--main-color-darkgrey);
   text-decoration: none;
 }
@@ -107,17 +117,19 @@ body {
   color: var(--main-color-blue);
 }
 
+/* contacts */
+
 .contacts {
   display: flex;
-
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .contacts-link {
+  display: inline-block;
   font-weight: 500;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
   color: var(--main-color-lightgrey);
 }
@@ -135,8 +147,7 @@ body {
 
 /* #region HERO */
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  /* max-width: 1600px; */
   padding: 200px 0px;
   text-align: center;
   vertical-align: middle;
@@ -145,9 +156,7 @@ body {
 }
 
 .hero-title {
-  margin: 0;
   margin-bottom: 30px;
-
   font-size: 44px;
   font-weight: 900;
   line-height: 1.37;
@@ -156,13 +165,11 @@ body {
   color: var(--white-color);
 }
 .hero-button {
-  padding: 0;
-  width: 200px;
-  height: 50px;
-
+  padding: 10px 32px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  line-height: 1.88;
   color: var(--white-color);
   background-color: var(--main-color-blue);
   border: none;
@@ -183,19 +190,15 @@ body {
 .advantages-list {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
   margin-left: -30px;
 }
 
 .advantages-item {
-  width: 270px;
+  flex-basis: calc((100% - 30px) / 4);
   margin-left: 30px;
 }
 
 .advantages-title {
-  padding: 0;
-  margin: 0;
   font-size: 14px;
   color: var(--main-color-darkgrey);
   text-transform: uppercase;
@@ -205,9 +208,6 @@ body {
 .advantages-text {
   line-height: 1.8;
   color: var(--main-color-lightgrey);
-
-  margin: 0;
-  padding: 0;
 }
 /* #endregion */
 
@@ -222,22 +222,18 @@ body {
   font-weight: 700;
   line-height: 1.17;
   color: var(--main-color-darkgrey);
-  padding: 0;
-  margin: 0;
   margin-bottom: 50px;
 }
 
 .wedo-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   list-style: none;
-  margin-left: -30px;
 }
 
-.wedo-item {
+.wedo-item + .wedo-item {
   margin-left: 30px;
 }
+
 .wedo-img {
   display: block;
   max-width: 100%;
@@ -253,8 +249,6 @@ body {
 }
 
 .command-title {
-  padding: 0;
-  margin: 0;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -266,8 +260,6 @@ body {
 .command-list {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
   margin-left: -30px;
 }
 .command-item {
@@ -278,8 +270,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .command-subtitle {
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
@@ -300,25 +290,19 @@ body {
   max-width: 100%;
 }
 .command-text {
-  padding: 0;
-  padding-top: 1px;
-  margin: 0;
   font-size: 16px;
+  line-height: 1.19;
   color: var(--main-color-lightgrey);
 }
 /* #endregion */
 
 /* #region FOOTER */
 .footer {
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-dark);
 }
-.footerflex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
+
 .logo.white {
   color: var(--white-color);
   margin-bottom: 20px;
@@ -326,16 +310,16 @@ body {
 
 .address-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .address-item + .address-item {
   margin-top: 9px;
 }
+
 .address-link {
   font-style: normal;
   text-decoration: none;
+  line-height: 1.5;
   color: var(--white-color);
 }
 
@@ -346,14 +330,18 @@ body {
 
 /* #region PORTFOLIO FILTER */
 .filter-list {
-  display: flex;
-
-  justify-content: center;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  text-align: center;
   margin-top: 94px;
-  margin-left: -8px;
+  margin-bottom: 50px;
+}
+
+.filter-item {
+  display: inline-block;
+}
+
+.filter-item + .filter-item {
+  margin-left: 8px;
 }
 
 .filter-btn {
@@ -377,9 +365,6 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-item + .filter-item {
-  margin-left: 8px;
-}
 /* #endregion */
 
 /* #region PORTFOLIO */
@@ -388,18 +373,18 @@ body {
   flex-wrap: wrap;
   list-style: none;
 
-  padding: 0;
-  padding-top: 50px;
   padding-bottom: 94px;
-
-  margin: 0;
+  /* 
+  в майбутньому тут можна використовувати
+  row-gap: 30px;
+  column-gap: 30px;
+  замість "костилів" з від'ємними маржинами
+  */
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .portfolio-item {
-  width: 370px;
-  height: 404px;
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -418,20 +403,14 @@ body {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  line-height: 2;
   color: var(--main-color-darkgrey);
-  padding: 0;
-  margin: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
   margin-bottom: 4px;
 }
 
 .portfolio-text {
-  padding: 0;
-  margin: 0;
   font-size: 16px;
   color: var(--main-color-lightgrey);
-  padding-top: 6px;
-  padding-bottom: 6px;
+  line-height: 1.87;
 }
 /* #endregion */
