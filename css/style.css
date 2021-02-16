@@ -310,6 +310,8 @@ button {
 .logo.white {
   color: var(--white-color);
   margin-bottom: 20px;
+  margin-top: 0;
+  padding: 0;
 }
 
 .address-list {
